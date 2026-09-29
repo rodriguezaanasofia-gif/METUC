@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620" width="100%" height="100%">
+  <defs>
+    <!-- Filter for realistic drop shadow on the map silhouette -->
+    <filter id="mapShadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="6" dy="10" stdDeviation="6" flood-color="#000000" flood-opacity="0.32" />
+    </filter>
+
+    <!-- Exact Tucuman map contour clip path -->
+    <clipPath id="tucumanClip">
+      <path d="
+        M 302,46
+        L 316,56
+        L 334,48
+        L 352,56
+        L 375,76
+        L 435,88
+        L 446,98
+        L 466,106
+        L 490,122
+        L 476,146
+        L 485,174
+        L 470,204
+        L 458,232
+        L 452,264
+        L 436,294
+        L 416,324
+        L 400,348
+        L 384,374
+        L 368,396
+        L 334,414
+        L 318,426
+        L 296,420
+        L 274,402
+        L 258,386
+        L 242,360
+        L 226,330
+        L 232,292
+        L 242,260
+        L 212,230
+        L 192,204
+        L 176,174
+        L 182,140
+        L 188,114
+        L 156,94
+        L 142,88
+        L 154,74
+        L 178,70
+        L 208,66
+        L 238,70
+        L 268,56
+        Z
+      " />
+    </clipPath>
+
+    <!-- Rainbow gradient for the bottom smile arc -->
+    <linearGradient id="rainbowSmile" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e52421" />
+      <stop offset="16%" stop-color="#f37023" />
+      <stop offset="33%" stop-color="#ffeb3b" />
+      <stop offset="50%" stop-color="#39b54a" />
+      <stop offset="66%" stop-color="#00aeef" />
+      <stop offset="83%" stop-color="#0054a6" />
+      <stop offset="100%" stop-color="#762a90" />
+    </linearGradient>
+
+    <!-- Curve for the curved text "Mutual de Empleados Tucumanos" -->
+    <!-- Arc from left to right curving downwards like a smile -->
+    <path id="textArcPath" d="M 68,368 C 120,530 500,530 552,368" fill="none" />
+  </defs>
+
+  <!-- MAP BASE WITH SHADOW AND GREEN BORDER -->
+  <!-- Outer green contour with drop shadow -->
+  <path
+    d="
+      M 302,46
+      L 316,56
+      L 334,48
+      L 352,56
+      L 375,76
+      L 435,88
+      L 446,98
+      L 466,106
+      L 490,122
+      L 476,146
+      L 485,174
+      L 470,204
+      L 458,232
+      L 452,264
+      L 436,294
+      L 416,324
+      L 400,348
+      L 384,374
+      L 368,396
+      L 334,414
+      L 318,426
+      L 296,420
+      L 274,402
+      L 258,386
+      L 242,360
+      L 226,330
+      L 232,292
+      L 242,260
+      L 212,230
+      L 192,204
+      L 176,174
+      L 182,140
+      L 188,114
+      L 156,94
+      L 142,88
+      L 154,74
+      L 178,70
+      L 208,66
+      L 238,70
+      L 268,56
+      Z
+    "
+    fill="#167926"
+    stroke="#115c1d"
+    stroke-width="14"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    filter="url(#mapShadow)"
+  />
+
+  <!-- 7 RAINBOW STRIPES CLIPPED INSIDE TUCUMAN MAP -->
+  <g clip-path="url(#tucumanClip)">
+    <!-- 1. Red Stripe -->
+    <rect x="120" y="30" width="400" height="58" fill="#e52421" />
+    <!-- 2. Orange Stripe -->
+    <rect x="120" y="88" width="400" height="56" fill="#f37023" />
+    <!-- 3. Yellow Stripe -->
+    <rect x="120" y="144" width="400" height="56" fill="#ffeb3b" />
+    <!-- 4. Green Stripe -->
+    <rect x="120" y="200" width="400" height="56" fill="#39b54a" />
+    <!-- 5. Cyan Stripe -->
+    <rect x="120" y="256" width="400" height="56" fill="#00aeef" />
+    <!-- 6. Royal Blue Stripe -->
+    <rect x="120" y="312" width="400" height="56" fill="#0054a6" />
+    <!-- 7. Purple Stripe -->
+    <rect x="120" y="368" width="400" height="70" fill="#762a90" />
+  </g>
+
+  <!-- ¨ M E T U C VERTICAL LETTERS -->
+  <g
+    fill="#ffffff"
+    stroke="#000000"
+    stroke-width="7"
+    paint-order="stroke fill"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    font-family="'Arial Black', 'Montserrat Black', 'Impact', system-ui, sans-serif"
+    font-weight="900"
+    text-anchor="middle"
+  >
+    <!-- Two dots of the diaeresis above M -->
+    <circle cx="295" cy="50" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="4.5" />
+    <circle cx="321" cy="50" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="4.5" />
+
+    <!-- M -->
+    <text x="310" y="128" font-size="58" letter-spacing="1">M</text>
+
+    <!-- E -->
+    <text x="310" y="196" font-size="58" letter-spacing="1">E</text>
+
+    <!-- T -->
+    <text x="310" y="264" font-size="58" letter-spacing="1">T</text>
+
+    <!-- U -->
+    <text x="310" y="332" font-size="58" letter-spacing="1">U</text>
+
+    <!-- C -->
+    <text x="310" y="400" font-size="58" letter-spacing="1">C</text>
+  </g>
+
+  <!-- LOWER RAINBOW ARC (SMILE) -->
+  <path
+    d="M 92,348 C 136,490 484,490 528,348"
+    fill="none"
+    stroke="url(#rainbowSmile)"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <!-- CURVED TEXT: "Mutual de Empleados Tucumanos" -->
+  <text
+    fill="#000000"
+    font-family="'Arial Black', 'Montserrat', 'Outfit', system-ui, sans-serif"
+    font-weight="900"
+    font-size="28"
+    letter-spacing="1.2"
+  >
+    <textPath href="#textArcPath" startOffset="50%" text-anchor="middle">
+      Mutual de Empleados Tucumanos
+    </textPath>
+  </text>
+</svg>

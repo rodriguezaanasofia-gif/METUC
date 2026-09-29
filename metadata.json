@@ -1,0 +1,6 @@
+{
+  "name": "METUC - Mutual de Empleados Tucumanos",
+  "description": "Presentación oficial de METUC: Asociación mutual de salud y sepelio en Tucumán. Planes familiares, cobertura médica, sepelio integral 24hs y cotizador interactivo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
